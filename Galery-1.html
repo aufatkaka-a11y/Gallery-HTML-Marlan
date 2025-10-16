@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Gallery</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      background-color: #0ad628;
+    }
+    header {
+      background-color: #404345;
+      color: white;
+      text-align: center;
+      padding: 20px;
+    }
+    .gallery {
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+      gap: 20px;
+      padding: 30px;
+    }
+    .gallery img {
+      width: 200px;
+      height: 150px;
+      object-fit: cover;
+      border-radius: 10px;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.3);
+      transition: transform 0.3s;
+    }
+    .gallery img:hover {
+      transform: scale(1.05);
+    }
+    a {
+      display: block;
+      text-align: center;
+      margin-bottom: 30px;
+      text-decoration: none;
+      color: white;
+      background-color: #e80606;
+      padding: 10px 20px;
+      border-radius: 5px;
+      width: fit-content;
+      margin: 0 auto 30px;
+    }
+    a:hover {
+      background-color: #0077b6;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Gallery</h1>
+  </header>
+
+  <div class="gallery">
+    <img src="foto-1.jpg" alt="Foto 1">
+    <img src="foto-2.jpeg" alt="Foto 2">
+    <img src="foto-3.jpeg" alt="Foto 3">
+  </div>
+
+  <a href="index-1.html">← Kembali</a>
+</body>
+</html>
